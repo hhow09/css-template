@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+}
+
+.wrapper {
+  flex: 1;
+  /* use flex to allocate rest space (vertically) of header/wrapper/footer*/
+  min-height: 100%;
+  display: flex;
+}
+.left-side {
+  width: 10%;
+}
+
+main {
+  flex: 1;
+  /* use flex to allocate rest space of left-side main right-side*/
+}
+
+.right-side {
+}
+
+footer {
+  width: 100%;
+}

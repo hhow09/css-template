@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template: auto 2fr auto / auto 1fr auto;
+  /* grid-template: <'grid-template-rows'> / <'grid-template-columns'> */
+}
+
+header {
+  grid-column: 1 / 4;
+}
+
+.left-side {
+  grid-column: 1 / 2;
+}
+
+main {
+  grid-column: 2 / 3;
+  overflow: auto;
+}
+
+.right-side {
+  grid-column: 3 / 4;
+}
+
+footer {
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body > * {
+  outline: 1px dashed #247ba0;
+}
