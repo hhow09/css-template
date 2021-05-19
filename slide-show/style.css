@@ -1,0 +1,60 @@
+
+.slideshow{
+    position: relative;
+    width: max-content;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.slide{
+    width: 400px;
+    height: 300px;
+    display: none;
+}
+.slide.red{
+    background-color: red;
+}
+.slide.green{
+    background-color: green;
+}
+.slide.blue{
+    background-color: aqua;
+}
+
+.arrow.left{
+    position: absolute;
+    font-size: 25px;
+    text-align: left;
+    top:50%;
+    left:0;
+}
+
+.arrow.right{
+    position: absolute;
+    font-size: 25px;
+    top:50%;
+    right:0;
+}
+
+.arrow:hover{
+    background-color: burlywood;
+    cursor: pointer;
+}
+#dot-container{
+    text-align:center;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot.active{
+    background-color: cornflowerblue;
+}
